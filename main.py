@@ -85,7 +85,7 @@ if __name__ == "__main__":
     # open_neuralnote(neuralnote_path) # commented for vst use
     synth.initialize_fluidsynth()
 
-    input_directory = "/Users/music/Library/Caches/NeuralNote"  # Directory to watch for new MIDI files
+    input_directory = "/Users/Radiance\Desktop/SideProjects/Midi"  # Directory to watch for new MIDI files
 
     # Load the model
     # print("Loading model...")
