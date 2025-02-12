@@ -16,7 +16,7 @@ class MidiFileHandler(FileSystemEventHandler):
         """
         if not event.is_directory and event.src_path.endswith(".mid"):
             print(f"File created: {event.src_path}")
-            self.callback(event.src_path)
+            # self.callback(event.src_path) commented out for now because it causes double calls
 
     def on_modified(self, event):
         """

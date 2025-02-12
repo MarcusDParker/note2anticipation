@@ -52,7 +52,6 @@ def midi_to_GB_UDP(midi_file_path):
     chords_list = [list(item) for item in chords]
     strum_list = [list(item) for item in strum]
     pluck_list = [list(item) for item in pluck]
-    
     print(chords_list)
     print(strum_list)
     print(pluck_list)
@@ -94,14 +93,14 @@ if __name__ == "__main__":
 
     # Start the OSC server in a separate thread
     server_ip = "127.0.0.1"
-    server_port = 11001
+    server_port = 12001
     server_thread = threading.Thread(target=start_server, args=(server_ip, server_port))
     server_thread.daemon = True
     server_thread.start()
 
     # Start the OSC client
     client_ip = "127.0.0.1"
-    client_port = 11000
+    client_port = 12000
     client = udp_client.SimpleUDPClient(client_ip, client_port)
 
     # Start watching the directory for new or modified MIDI files in a separate thread
